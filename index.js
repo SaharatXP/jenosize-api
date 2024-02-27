@@ -13,7 +13,6 @@ const port = 8080;
 
 app.use(express.json()); // ให้ Express ใช้งาน JSON middleware
 
-// สร้าง route สำหรับ API
 app.get("/search", async (req, res) => {
   try {
     const { name } = req.query; // รับ parameter 'name' จาก query string
