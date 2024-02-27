@@ -1,5 +1,5 @@
 function playGame24(app) {
-  app.post("/game24", (req, res) => {
+  app.post("/api/game24", (req, res) => {
     const numbers = req.body.numbers;
     if (
       !numbers ||

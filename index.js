@@ -31,7 +31,7 @@ app.get("/search", async (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.post("/play", playGame);
+app.post("/api/play", playGame);
 playGame24(app);
 
 app.listen(port, () => {
